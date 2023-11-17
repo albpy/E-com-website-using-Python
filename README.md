@@ -38,8 +38,8 @@ Make sure you have the following installed:
 
    Run the application:
    ```bash
- python app.py
- ```
+   python main.py --mode create_app
+   ```
 Open your web browser and navigate to http://localhost:5000 to view the application.
 
 
