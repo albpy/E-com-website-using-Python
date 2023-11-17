@@ -31,16 +31,15 @@ Make sure you have the following installed:
 
    ```bash
    git clone https://github.com/your-username/E-com-website-using-Python.git
-```
+   ```
 
 2. Configuration
    Configure your database settings in the database.py file.
 
    Run the application:
-
-```bash
+   ```bash
  python app.py
-```
+ ```
 Open your web browser and navigate to http://localhost:5000 to view the application.
 
 
