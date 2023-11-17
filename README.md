@@ -33,14 +33,18 @@ Make sure you have the following installed:
    git clone https://github.com/your-username/E-com-website-using-Python.git
    ```
 
-2. Configuration
-   Configure your database settings in the database.py file.
+## Configuration
 
-   Run the application:
-   ```bash
-   python main.py --mode create_app
-   ```
-Open your web browser and navigate to http://localhost:5000 to view the application.
+1. Configure your database settings in the `database.py` file.
+
+2. Run the application:
+
+    ```bash
+    python main.py --mode create_app
+    ```
+
+3. Open your web browser and navigate to [http://localhost:5000](http://localhost:5000) to view the application.
+
 
 
 
