@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 	<head>
+ 		<!-- Meta Tags -->
+		<meta charset="UTF-8">
+		<meta name="author" content="Kamran Mubarik">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Title -->
+ 		<title>Create an E-Commerce Website using HTML, CSS and JS</title>
+ 		<!-- Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_admin.css')}}" />
+		</head>
+    <body>
+        <style>
+            /* body {
+            background: khaki; /* Change to khaki yellow */
+        
+        
+        .myblock {
+            border: 1px solid black;
+            border-radius: 4%;
+            background: rgba(0, 0, 0, 0.5);
+            margin-top: 20%;
+            padding: 3%;
+        }
+        
+        .h1 {
+            margin-bottom: 5%;
+            color: coral;
+        }
+        
+        .mybtn {
+            background: khaki; /* Change to khaki yellow */
+        } */
+        
+        </style>
+
+            <header>
+                <div class="container">
+                    <div class="brand">
+                        <div class="logo">
+                            <a href="{{ url_for('admin_index') }}">
+                                <img src="{{ url_for('static', filename='img/icons/online_shopping.png') }}">
+                                <div class="logo-text">
+                                    <p class="big-logo">Ecommerce</p>
+                                    <p class="small-logo">online shop</p>
+                                </div>
+                            </a>
+                        </div> <!-- logo -->
+                        <div class="shop-icon">
+                            <div class="dropdown">
+                                <img src="{{ url_for('static', filename='img/icons/account.png')}}">
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="#">My Account</a></li>								
+                                        <li><a href="#">Settings</a></li>
+                                        <li><a href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- shop icons -->
+                    </div> <!-- brand -->
+                </div> <!-- container -->
+            </header> <!-- header -->
+
+        <div class="column is-10 is-offset-10">
+            <h3 class="title">Sign Up</h3>
+            <div class="box">
+                <form method="POST" action="/signup">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="email" name="email" placeholder="Email" autofocus="">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="text" name="name" placeholder="Name" autofocus="">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="text" name="address" placeholder="Address">
+                        </div>
+                    </div>
+    
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="tel" name="phone" placeholder="Phone">
+                        </div>
+                    </div>
+                    
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="text" name="zipcode" placeholder="Zipcode">
+                        </div>
+                    </div>
+    
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="text" name="city" placeholder="City">
+                        </div>
+                    </div>
+    
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="text" name="state" placeholder="State">
+                        </div>
+                    </div>
+    
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="text" name="country" placeholder="Country">
+                        </div>
+                    </div>
+
+                    <button class="button is-block is-info is-large is-fullwidth">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
